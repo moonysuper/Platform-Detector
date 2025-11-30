@@ -1,16 +1,60 @@
-# platform_detector
+# 📱 Platform Detector
 
-A new Flutter project.
+Platform Detector is a modern Flutter application that analyzes installed apps on your Android device and detects which development platform they were built with. Whether it's **Native (Java/Kotlin)**, **Flutter**, **React Native**, **Unity**, or any other technology, Platform Detector gives you deep insights into the apps running on your phone.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+✔️ Detects supported app platforms:
+- Flutter
+- Native Android (Java / Kotlin)
+- React Native
+- Xamarin
+- More platforms coming soon...
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✔️ Modern **Material 3** UI  
+✔️ **Light & Dark** professional themes  
+✔️ Smooth performance and clean animations  
+✔️ Minimal, fast, no unnecessary permissions  
+✔️ Transparent and developer-friendly output
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧠 How It Works
+
+Platform Detector scans installed `.apk` metadata and structure, analyzing libraries, package signatures, native libraries, and framework identifiers to classify applications into their respective development platforms.
+
+---
+
+## 🎨 UI & Design
+
+The app includes a polished visual identity with a modern orange-themed logo and color palette:
+
+- Flat Material Design
+- Rounded widgets and cards
+- OLED-friendly dark mode
+- Clean typography and structured layout
+
+---
+
+## 🏗️ Tech Stack
+
+| Component | Technology |
+|----------|------------|
+| Platform | Flutter |
+| State Mgmt | GetX |
+| Theme | Custom Light/Dark Themes |
+| Platform Detection | Native package data parsing |
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```sh
+git clone https://github.com/moonysuper/Platform-Detector.git
+cd platform_detector
+flutter pub get
+flutter run
