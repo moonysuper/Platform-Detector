@@ -153,7 +153,7 @@ class MainScreen extends GetView<MainController> {
                             ),
                             const SizedBox(height: 8),
                             Text(
-                              'Platform: ${platformLabel(app.builtWith)} • ${app.getVersionInfo()}',
+                              'Platform:  • Version ${app.getVersionInfo()}',
                               style: TextStyle(
                                 color: Colors.grey.shade700,
                                 fontSize: 13,

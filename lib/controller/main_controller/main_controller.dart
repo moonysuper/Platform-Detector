@@ -108,6 +108,23 @@ class MainController extends GetxController {
     debugPrint('openApp info: $_app');
   }
 
+  /// Detects platform using custom Kotlin method channel
+  Future<String> detectPlatform(String packageName) async {
+    try {
+      final result = await _platformChannel.invokeMethod(
+        'detectPlatform',
+        {'package_name': packageName},
+      );
+      return result?.toString() ?? 'unknown';
+    } on PlatformException catch (e) {
+      debugPrint('detectPlatform failed: ${e.message}');
+      return 'unknown';
+    } catch (e) {
+      debugPrint('detectPlatform unexpected error: $e');
+      return 'unknown';
+    }
+  }
+
   Future<void> handleShare(BuildContext context, AppInfo app) async {
     final success = await shareApp(app.packageName);
     Get.snackbar(
